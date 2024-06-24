@@ -24,7 +24,7 @@ deployment = client.V1Deployment(
                     client.V1Container(
                         name="my-flask-container",
                         image="568373317874.dkr.ecr.us-east-1.amazonaws.com/my_monitoring_app_image:latest", #ECR URI from AWS
-                        ports=[client.V1ContainerPort(container_port=5000)]
+                        ports=[client.V1ContainerPort(container_port=5001)]
                     )
                 ]
             )
